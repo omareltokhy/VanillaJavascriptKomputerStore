@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KomputerStore</title>
+</head>
+<body>
+    <div class = "header">
+        <div class = "inner-header">
+            <div class = "container">
+                <h1>Komputer<span>Store</span></h1>
+            </div>
+        </div>
+    </div>
+    <section class = "bankwork">
+        <div class = "bank">
+            <div class = "banker">
+                <h2>Joe Banker</h2>
+                <p>Balance: <span id = "balance" class = "balance">0</span>€</p>
+                <p id = "outstandingLoan"></p>
+                <button id = "getALoan" class = "getLoan">
+                    <p>Get a loan</p>
+                </button>
+                <button id = "repayLoan" class = "hidden">
+                    <p>Repay loan</p>
+                </button>
+            </div>
+        </div>
+        <div class = "work">
+            <div class = "worker">
+                <h2>Work</h2>
+                <p>Pay: <span id = "pay" class = "pay">0</span>€</p>
+                <button id = "work" class = "earn">
+                    <p>Work</p>
+                </button>
+                <button id = "bank" class = "bankIt">
+                    <p>Bank</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class = "laptop-section">
+        <div class = "laptop">
+            <div class = "buy">
+                <h2>Laptops</h2>
+                <select name = "laptops" id = "laptopSelection">
+                </select>
+                <h3>Features:</h3>
+                <p id = "laptopFeatures" class = "features"></p>
+            </div>
+        </div>
+        <div class = "laptops">
+            <div class = "show">
+                <h2>Models</h2>
+                <div class = "pic">
+                    <img id = "laptopImage" class = "picc" onerror = "this.src = `http://www.markuslaforsch.org/wp-content/plugins/lightbox/images/No-image-found.jpg`;">
+                </div>
+                <div class = "description">
+                    <h3 id = "laptopName">MacBook Pro</h3>
+                    <p id = "laptopDescription" class = "desc">Apple laptop</p>
+                </div>
+                <div class = "buynow">
+                    <h3><span id = "laptopPrice">Price</span> €</h3>
+                    <button id = "buyALaptop"><p>Buy Now</p></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src = "index.js"></script>
+</body>
+</html>

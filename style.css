@@ -1,0 +1,176 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: #EEEEEE;
+}
+
+button{
+    background-color: #FF5722;
+    border-radius: 25px;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+    width: 40%;
+    margin: 50px auto;
+}
+
+.hidden{
+    display: none;
+}
+
+select{
+    background-color: #EEEEEE;
+    text-decoration-color: #EEEEEE;
+    border-radius: 25px;
+    padding: 5px;
+    position: relative;
+    bottom: -20px;
+    width: 75%;
+    margin: auto;
+}
+
+/*Header*/
+.header{
+    background-color: #222831;
+    width: 100%;
+    height: 120px;
+    display: block;
+}
+
+.inner-header{
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container{
+    height: 100%;
+    width: auto;
+    margin: auto;
+    display: table;
+}
+
+.container h1{
+    color: #EEEEEE;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.container h1 span{
+    font-weight: 900;
+}
+
+/*Containers for bank, laptops, work*/
+.bankwork {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.bank{
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+
+.work{
+    width: 50%;
+    height: 200px;
+    float: right;
+}
+
+.laptop-section {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+.laptop{
+    width: 25%;
+    height: 300px;
+    float: left;
+}
+
+.laptops{
+    width: 75%;
+    height: 300px;
+    float: right;
+}
+
+.banker, .worker{
+    background-color: #393E46;
+    width: 90%;
+    margin: 24px auto;
+    display: block;
+    text-align: center;
+    height: 140px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.buy, .show{
+    background-color: #393E46;
+    width: 90%;
+    margin: 24px auto;
+    display: block;
+    text-align: center;
+    height: 250px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.buy h3{
+    position: relative;
+    bottom: -40px;
+}
+
+.buy .features{
+    padding: 10px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.pic{
+    float: left;
+    width: 33%;
+    position: relative;
+    top: 10px;
+}
+
+.pic .picc{
+    width: 70%;
+    height: 70%;
+    position: relative;
+}
+
+.description{
+    float: left;
+    width: 33%;
+    position: relative;
+    top: 40px;
+}
+
+.description .desc{
+    margin-top: 20px;
+}
+
+.buynow{
+    float: right;
+    width: 33%;
+    position: relative;
+    top: 40px;
+}
