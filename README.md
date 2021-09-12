@@ -11,6 +11,10 @@ Can't get a loan over twice a value of own currency.
 Once you have enough currency, you are able to purchase a computer with information fetched
 from an API provided by Noroff.
 
+## Page
+
+Page is running on GitLab pages: https://omareltokhy.gitlab.io/komputerstoreassignment/
+
 ## Contributing
 
 Omar El Tokhy for Noroff .NET Fullstack-course.
