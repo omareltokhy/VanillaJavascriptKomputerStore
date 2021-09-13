@@ -18,12 +18,16 @@ button{
     padding: 10px;
     position: relative;
     bottom: 20px;
-    width: 40%;
+    width: 30%;
     margin: 50px auto;
 }
 
 .hidden{
     display: none;
+}
+
+.getLoan{
+    bottom: 38px;
 }
 
 select{

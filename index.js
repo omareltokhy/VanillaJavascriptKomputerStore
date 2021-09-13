@@ -72,7 +72,7 @@ const bankEarnings = () => {
         balance.innerText = totalBalance;
     }else if(totalLoanAmount > 0){
         totalBalance += (totalPay*0.9)
-        totalLoanAmount -= (totalPay*0.1)
+        totalLoanAmount += (totalPay*0.1)
         totalPay = 0;
         pay.innerText = totalPay;
         balance.innerText = totalBalance;
@@ -84,7 +84,7 @@ bank.addEventListener("click", bankEarnings);
 
 //Function to make repay loan button to appear
 const repayButtonAppear = () => {
-    repayLoan.className = "getLoan"
+    repayLoan.className = "bankIt"
 }
 
 //Functionality to get a loan button. Can have only 1 loan before buy, 1 loan at a time, and max. 2x balance worth of loan
@@ -110,17 +110,19 @@ const getABankLoan = () => {
 
 getALoan.addEventListener("click", getABankLoan);
 
-//Repay loan button takes money from balance and pays outstanding loan
+//Repay loan button takes money from pay and pays outstanding loan
 const repayOutstandingLoan = () => {
-    if(totalBalance >= totalLoanAmount){
-        totalBalance -= totalLoanAmount
+    if(totalPay >= totalLoanAmount){
+        totalPay -= totalLoanAmount
         totalLoanAmount = 0
-        balance.innerText = totalBalance
+        totalLoans -= 1
+        pay.innerText = totalPay
         outstandingLoan.innerText = `Loans: ${totalLoanAmount}€`
-    }else if(totalBalance < totalLoanAmount){
-        totalLoanAmount -= totalBalance
-        totalBalance = 0
-        balance.innerText = totalBalance
+    }else if(totalPay < totalLoanAmount){
+        totalLoanAmount -= totalPay
+        totalPay = 0
+        totalLoans -= 1
+        pay.innerText = totalPay
         outstandingLoan.innerText = `Loans: ${totalLoanAmount}€`
     }
 }
@@ -135,7 +137,7 @@ const buyALaptopNow = () => {
     }else{
         alert(`You are a new happy owner of ${selectedLaptop.title}`)
         totalBalance -= parseInt(selectedLaptop.price)
-        totalLoansBeforeBuy = 0
+        totalLoansBeforeBuy -= 1
         balance.innerText = totalBalance
     }
 }
