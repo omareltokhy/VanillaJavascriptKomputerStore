@@ -13,7 +13,7 @@ from an API provided by Noroff.
 
 ## Page
 
-Page is running on GitLab pages: https://omareltokhy.gitlab.io/komputerstoreassignment/
+Page is running on Github pages:  https://omareltokhy.github.io/VanillaJavascriptKomputerStore/
 
 ## Contributing
 
